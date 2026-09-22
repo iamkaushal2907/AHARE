@@ -175,26 +175,28 @@ ul { list-style: none; }
   gap: 2rem;
 }
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.nav-logo-img {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+  display: block;
+  /* The logo is maroon on a light/paper background.
+     Show as-is on cream navbar, looks clean. */
+  border-radius: 4px;
+}
+.nav-logo-text {
   font-family: var(--font-serif);
-  font-size: 1.9rem;
+  font-size: 1.75rem;
   font-weight: 900;
   color: var(--maroon);
-  letter-spacing: 0.08em;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-}
-.nav-logo .logo-leaf {
-  width: 32px;
-  height: 32px;
-  background: var(--maroon);
-  border-radius: 50% 0 50% 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cream);
-  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
 }
 .nav-links {
   display: flex;
