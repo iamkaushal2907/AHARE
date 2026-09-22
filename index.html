@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AHARÉ — Traditional Indian Snacks, Reimagined</title>
+  <meta name="description" content="AHARÉ brings traditional Indian snacks into modern life. Made with millets, flaxseed, amaranth and wholesome ingredients inspired by generations of family recipes." />
+  <meta property="og:title" content="AHARÉ — Traditional Indian Snacks, Reimagined" />
+  <meta property="og:description" content="Old Ingredients. New Stories. Traditional flavours for a brighter tomorrow." />
+  <meta property="og:image" content="assets/images/hero_bg.png" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo" id="nav-logo-link">
+      <div class="nav-logo-icon">🪷</div>
+      AHARÉ
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#story" id="nav-story">Our Story</a></li>
+      <li><a href="#different" id="nav-different">What Makes Us Different</a></li>
+      <li><a href="#mission" id="nav-mission">Our Mission</a></li>
+      <li><a href="#products" id="nav-products">Products</a></li>
+      <li><a href="#story-video" id="nav-video">The Story</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="close-btn" id="mobile-close-btn" aria-label="Close menu">✕</button>
+  <a href="#story"     id="mob-story"     onclick="closeMobile()">Our Story</a>
+  <a href="#different" id="mob-different" onclick="closeMobile()">What Makes Us Different</a>
+  <a href="#mission"   id="mob-mission"   onclick="closeMobile()">Our Mission</a>
+  <a href="#products"  id="mob-products"  onclick="closeMobile()">Products</a>
+  <a href="#story-video" id="mob-video"  onclick="closeMobile()">The Story</a>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" role="img" aria-label="Traditional Indian kitchen with millets and wholesome ingredients"></div>
+
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      🌾 &nbsp;Since our Grandmother's Kitchen
+    </div>
+
+    <h1 class="hero-title" id="hero-title">
+      Old Ingredients.<br />
+      <em>New Stories.</em>
+    </h1>
+
+    <p class="hero-sub">
+      Traditional Indian snacks, reimagined for today's generation.
+      Every bite carries a memory, a tradition, a story.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#story" class="btn btn-primary" id="hero-cta-story">
+        Explore Our Story &nbsp;→
+      </a>
+      <a href="#products" class="btn btn-outline" id="hero-cta-products">
+        View Products
+      </a>
+    </div>
+
+    <div class="hero-badges" role="list" aria-label="Brand highlights">
+      <div class="hero-badge" role="listitem">
+        <span class="badge-icon">🌾</span> Wholesome Ingredients
+      </div>
+      <div class="hero-badge" role="listitem">
+        <span class="badge-icon">👵</span> Inspired by Tradition
+      </div>
+      <div class="hero-badge" role="listitem">
+        <span class="badge-icon">🧡</span> Made for Modern Families
+      </div>
+      <div class="hero-badge" role="listitem">
+        <span class="badge-icon">🌿</span> A Kinder Planet
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-tagline" aria-hidden="true">
+    Same Roots.<br />A Brighter<br />Tomorrow. ♡
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     INGREDIENTS MARQUEE STRIP
+══════════════════════════════════════════════ -->
+<div id="ingredients" aria-label="Key ingredients">
+  <div class="marquee-track" aria-hidden="true">
+    <!-- duplicated for seamless loop -->
+    <span class="marquee-item"><span>✦</span> Foxtail Millet</span>
+    <span class="marquee-item"><span>✦</span> Browntop Millet</span>
+    <span class="marquee-item"><span>✦</span> Flaxseed</span>
+    <span class="marquee-item"><span>✦</span> Amaranth</span>
+    <span class="marquee-item"><span>✦</span> Water Chestnut</span>
+    <span class="marquee-item"><span>✦</span> Proso Millet</span>
+    <span class="marquee-item"><span>✦</span> Puffed Paddy</span>
+    <span class="marquee-item"><span>✦</span> Nuts &amp; Seeds</span>
+    <span class="marquee-item"><span>✦</span> Foxtail Millet</span>
+    <span class="marquee-item"><span>✦</span> Browntop Millet</span>
+    <span class="marquee-item"><span>✦</span> Flaxseed</span>
+    <span class="marquee-item"><span>✦</span> Amaranth</span>
+    <span class="marquee-item"><span>✦</span> Water Chestnut</span>
+    <span class="marquee-item"><span>✦</span> Proso Millet</span>
+    <span class="marquee-item"><span>✦</span> Puffed Paddy</span>
+    <span class="marquee-item"><span>✦</span> Nuts &amp; Seeds</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     BRAND STORY
+══════════════════════════════════════════════ -->
+<section id="story" aria-labelledby="story-title">
+  <div class="container story-grid">
+
+    <div class="story-text reveal-left">
+      <p class="section-label">Our Brand Story</p>
+      <h2 class="section-title" id="story-title">
+        A Taste of Home,<br />A Brighter Tomorrow
+      </h2>
+
+      <p>
+        AHARÉ was born from a simple belief — that our traditional recipes
+        and forgotten ingredients deserve a place in today's world. Inspired
+        by the kitchens of our mothers and grandmothers, we bring you snacks
+        that carry the goodness of our roots.
+      </p>
+      <p>
+        We don't just want you to enjoy a snack. We want every bite to bring
+        back something familiar — the taste, warmth and comfort of home.
+        Because some of the goodness we have forgotten deserves to be remembered.
+      </p>
+      <p>
+        We preserve the essence of traditional food while giving it a fresh,
+        convenient and contemporary form that fits today's lifestyle. Easy to
+        enjoy, easy to share, and created to fit naturally into busy everyday lives.
+      </p>
+
+      <blockquote class="story-quote">
+        "Recipes that travel generations." ♡
+      </blockquote>
+    </div>
+
+    <div class="story-img-wrap reveal-right">
+      <img
+        src="assets/images/Story.jpeg"
+        alt="Grandmother and granddaughter sharing traditional snacks in a cozy Indian home"
+        loading="lazy"
+      />
+      <div class="story-card-overlay">
+        Old Recipes<br />New Memories
+        <div class="heart">♡</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Wave divider -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#F5EDD8"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     WHAT MAKES AHARÉ DIFFERENT
+══════════════════════════════════════════════ -->
+<section id="different" aria-labelledby="different-title">
+  <div class="container">
+    <div class="different-header reveal">
+      <p class="section-label">What Sets Us Apart</p>
+      <h2 class="section-title" id="different-title">What Makes AHARÉ Different?</h2>
+      <p class="section-subtitle">
+        More than snacks. A story in every bite — rooted in tradition, crafted with love.
+      </p>
+    </div>
+
+    <div class="diff-grid">
+
+      <article class="diff-card reveal" style="transition-delay:0.05s">
+        <span class="diff-icon">🌱</span>
+        <h3>Tradition, Reimagined</h3>
+        <p>
+          We bring cherished Indian recipes and traditional ingredients into snacks
+          made for today's generation — old family recipes, presented in a new way.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.10s">
+        <span class="diff-icon">🌾</span>
+        <h3>Wholesome Ingredients</h3>
+        <p>
+          Millets, flaxseed, amaranth, water chestnut, seeds, nuts and other
+          thoughtfully chosen ingredients form the heart of our snacks.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.15s">
+        <span class="diff-icon">👵</span>
+        <h3>Recipes With a Story</h3>
+        <p>
+          Our inspiration comes from the kitchens of our mothers and grandmothers.
+          Every recipe carries a memory, a tradition, or a story passed from one
+          generation to another.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.20s">
+        <span class="diff-icon">❤️</span>
+        <h3>More Than Just a Snack</h3>
+        <p>
+          We don't just want you to enjoy a snack. We want every bite to bring back
+          something familiar — the taste, warmth and comfort of home.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.25s">
+        <span class="diff-icon">✨</span>
+        <h3>Traditional, Not Outdated</h3>
+        <p>
+          We preserve the essence of traditional food while giving it a fresh,
+          convenient and contemporary form that fits today's lifestyle.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.30s">
+        <span class="diff-icon">🧡</span>
+        <h3>Made for Modern Families</h3>
+        <p>
+          Easy to enjoy, easy to share, and created to fit naturally into
+          busy everyday lives — because good food should always be accessible.
+        </p>
+      </article>
+
+      <article class="diff-card reveal" style="transition-delay:0.35s">
+        <span class="diff-icon">🌿</span>
+        <h3>Celebrating Forgotten Goodness</h3>
+        <p>
+          We want to bring traditional ingredients and recipes back to today's tables
+          because some of the goodness we have forgotten deserves to be remembered.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     OUR MISSION
+══════════════════════════════════════════════ -->
+<section id="mission" aria-labelledby="mission-title">
+  <div class="mission-bg" role="img" aria-label="Mission background"></div>
+
+  <div class="container mission-inner">
+
+    <div class="mission-text reveal-left">
+      <p class="section-label">Our Mission</p>
+      <h2 class="section-title" id="mission-title">
+        Preserve the Past.<br />Nourish the Present.<br />Inspire the Next Generation.
+      </h2>
+      <p class="mission-statement">
+        To bring the goodness of India's food heritage into the lives of a new generation
+        by preserving traditional recipes, reviving forgotten ingredients, and making
+        wholesome traditional snacks a part of modern everyday life.
+      </p>
+      <div class="mission-tagline">
+        Kahani purani hai,<br />par swaad evergreen. 🥹❤️
+      </div>
+    </div>
+
+    <div class="mission-pillars reveal-right" role="list" aria-label="Mission pillars">
+      <div class="mission-pillar" role="listitem">
+        <div class="mp-icon">📖</div>
+        <h4>Preserve the Past</h4>
+      </div>
+      <div class="mission-pillar" role="listitem">
+        <div class="mp-icon">🌱</div>
+        <h4>Nourish the Present</h4>
+      </div>
+      <div class="mission-pillar" role="listitem">
+        <div class="mp-icon">👨‍👩‍👧</div>
+        <h4>Inspire the Next Generation</h4>
+      </div>
+      <div class="mission-pillar" role="listitem">
+        <div class="mp-icon">🏡</div>
+        <h4>Good Food Finds Its Way Home</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     OUR PRODUCTS
+══════════════════════════════════════════════ -->
+<section id="products" aria-labelledby="products-title">
+  <div class="container">
+    <div class="products-header reveal">
+      <p class="section-label">Our Products</p>
+      <h2 class="section-title" id="products-title">Traditional Flavours for a Brighter Tomorrow</h2>
+      <p class="section-subtitle">
+        Each product is a tribute to India's culinary wisdom — wholesome, honest, and crafted with care.
+      </p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <article class="product-card reveal" style="transition-delay:0.05s" id="product-foxtail">
+        <div class="product-img-wrap">
+          <img src="assets/images/product_foxtail_millet.png"
+               alt="Foxtail Millet Crunch snack pack"
+               loading="lazy" />
+          <span class="product-badge">High Fibre</span>
+        </div>
+        <div class="product-body">
+          <p class="product-num">01</p>
+          <h3>Foxtail Millet Crunch</h3>
+          <p class="product-tagline">Light. Crunchy. Wholesome.</p>
+          <div class="product-tags">
+            <span class="product-tag">🌾 High Fibre</span>
+            <span class="product-tag">🌿 Plant Protein</span>
+            <span class="product-tag">✓ No Maida</span>
+            <span class="product-tag">♡ Traditional Flavours</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card reveal" style="transition-delay:0.10s" id="product-browntop">
+        <div class="product-img-wrap">
+          <img src="assets/images/product_browntop_millet.png"
+               alt="Browntop Millet Bites snack pack"
+               loading="lazy" />
+          <span class="product-badge">Gluten Free</span>
+        </div>
+        <div class="product-body">
+          <p class="product-num">02</p>
+          <h3>Browntop Millet Bites</h3>
+          <p class="product-tagline">Small Bites. Big Goodness.</p>
+          <div class="product-tags">
+            <span class="product-tag">🌾 Rich in Nutrients</span>
+            <span class="product-tag">✓ Gluten Free</span>
+            <span class="product-tag">✓ No Preservatives</span>
+            <span class="product-tag">♡ Wholesome &amp; Tasty</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card reveal" style="transition-delay:0.15s" id="product-water-chestnut">
+        <div class="product-img-wrap">
+          <img src="assets/images/product_water_chestnut.png"
+               alt="Water Chestnut and Amaranth Blends snack pack"
+               loading="lazy" />
+          <span class="product-badge">Iron Rich</span>
+        </div>
+        <div class="product-body">
+          <p class="product-num">03</p>
+          <h3>Water Chestnut &amp; Amaranth Blends</h3>
+          <p class="product-tagline">A unique blend. A familiar comfort.</p>
+          <div class="product-tags">
+            <span class="product-tag">🌿 Iron Rich</span>
+            <span class="product-tag">✓ Naturally Gluten Free</span>
+            <span class="product-tag">✓ Light &amp; Crunchy</span>
+            <span class="product-tag">♡ Traditional Inspired</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card reveal" style="transition-delay:0.20s" id="product-proso">
+        <div class="product-img-wrap">
+          <img src="assets/images/product_proso_millet.png"
+               alt="Proso Millet Spice Mix snack pack"
+               loading="lazy" />
+          <span class="product-badge">High Protein</span>
+        </div>
+        <div class="product-body">
+          <p class="product-num">04</p>
+          <h3>Proso Millet Spice Mix</h3>
+          <p class="product-tagline">Simple Ingredients. Bold Flavours.</p>
+          <div class="product-tags">
+            <span class="product-tag">💪 High Protein</span>
+            <span class="product-tag">✓ No Added MSG</span>
+            <span class="product-tag">🌿 Natural Spices</span>
+            <span class="product-tag">♡ Snack Anytime</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product-card reveal" style="transition-delay:0.25s" id="product-puffed">
+        <div class="product-img-wrap">
+          <img src="assets/images/product_puffed_paddy.png"
+               alt="Puffed Paddy Masala Mix snack pack"
+               loading="lazy" />
+          <span class="product-badge">Light &amp; Airy</span>
+        </div>
+        <div class="product-body">
+          <p class="product-num">05</p>
+          <h3>Puffed Paddy Masala Mix</h3>
+          <p class="product-tagline">A Classic, Reimagined.</p>
+          <div class="product-tags">
+            <span class="product-tag">🌾 Light &amp; Crunchy</span>
+            <span class="product-tag">✓ Low in Fat</span>
+            <span class="product-tag">🌿 Real Spices</span>
+            <span class="product-tag">♡ A Taste of Home</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     VIDEO — THE STORY BEHIND EVERY BITE
+══════════════════════════════════════════════ -->
+<section id="story-video" aria-labelledby="video-title">
+  <div class="container">
+    <div class="video-header reveal">
+      <p class="section-label">The Story Behind Every Bite</p>
+      <h2 class="section-title" id="video-title">Dadi's Kitchen, Reimagined</h2>
+      <p class="section-subtitle" style="margin-inline:auto;text-align:center;">
+        A glimpse into the love, tradition and care that goes into every AHARÉ snack.
+      </p>
+    </div>
+
+    <div class="video-wrap reveal">
+      <video
+        id="brand-video"
+        controls
+        preload="metadata"
+        poster="assets/images/OurMission.jpeg"
+        aria-label="AHARÉ brand story video"
+      >
+        <source src="assets/videos/oldVideoStory.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="video-overlay-text" aria-hidden="true">
+        <h3>Good Food Brings People Closer ♡</h3>
+        <p>Same Roots. A Brighter Tomorrow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CLOSING QUOTE / CTA
+══════════════════════════════════════════════ -->
+<section id="cta" aria-labelledby="cta-title">
+  <div class="container cta-inner">
+
+    <blockquote class="cta-quote reveal">
+      "We don't just make snacks;<br />we bring your grandmother's kitchen back to your table." 🥹❤️
+    </blockquote>
+
+    <div class="cta-pillars reveal" style="transition-delay:0.1s" role="list" aria-label="AHARÉ stands for">
+      <div class="cta-pillar" role="listitem">
+        <div class="cp-icon">📜</div>
+        <h4>Traditional Recipes</h4>
+        <p>Passed through generations</p>
+      </div>
+      <div class="cta-pillar" role="listitem">
+        <div class="cp-icon">🌾</div>
+        <h4>Wholesome Ingredients</h4>
+        <p>Millets, seeds, nuts &amp; more</p>
+      </div>
+      <div class="cta-pillar" role="listitem">
+        <div class="cp-icon">💛</div>
+        <h4>Memories in Every Bite</h4>
+        <p>Taste the warmth of home</p>
+      </div>
+    </div>
+
+    <div style="margin-top:1rem;text-align:center;font-family:var(--font-sans);font-size:0.9rem;color:var(--text-light);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">
+      Good Food · Happier People · A Kinder Planet
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">🪷 AHARÉ</div>
+        <p>
+          Traditional Indian snacks, reimagined for today's generation.
+          Every bite carries a memory, a tradition, a story passed from one generation to another.
+        </p>
+        <div class="footer-tagline">Same Roots. A Brighter Tomorrow. ♡</div>
+        <div class="social-links" role="list" aria-label="Social media links">
+          <a href="#" class="social-link" role="listitem" aria-label="Instagram" id="footer-instagram">📸</a>
+          <a href="#" class="social-link" role="listitem" aria-label="Facebook"  id="footer-facebook">👍</a>
+          <a href="#" class="social-link" role="listitem" aria-label="YouTube"   id="footer-youtube">▶️</a>
+          <a href="#" class="social-link" role="listitem" aria-label="WhatsApp"  id="footer-whatsapp">💬</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#story"       id="footer-link-story">Our Story</a></li>
+          <li><a href="#different"   id="footer-link-different">What Makes Us Different</a></li>
+          <li><a href="#mission"     id="footer-link-mission">Our Mission</a></li>
+          <li><a href="#products"    id="footer-link-products">Products</a></li>
+          <li><a href="#story-video" id="footer-link-video">The Story</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h4>AHARÉ Stands For</h4>
+        <ul>
+          <li><a href="#" id="footer-stand-1">Traditional Recipes</a></li>
+          <li><a href="#" id="footer-stand-2">Wholesome Ingredients</a></li>
+          <li><a href="#" id="footer-stand-3">Memories in Every Bite</a></li>
+        </ul>
+        <div style="margin-top:1.5rem;">
+          <h4>A Brand With Heart</h4>
+          <ul>
+            <li style="color:rgba(251,245,230,0.65);font-size:0.9rem;margin-top:0.5rem;">Good Food · Happier People</li>
+            <li style="color:rgba(251,245,230,0.65);font-size:0.9rem;margin-top:0.4rem;">A Kinder Planet 🌿</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 AHARÉ. All rights reserved. Made with ❤️ for India's food heritage.</p>
+      <p style="font-family:var(--font-script);color:rgba(251,245,230,0.45);font-size:1rem;">
+        Kahani purani hai, par swaad evergreen.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
